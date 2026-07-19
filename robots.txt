@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://art-of-telling.com/sitemap.xml
