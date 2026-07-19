@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Art of Telling — A Creative Writing Salon with James F. Mulhern</title>
+<meta name="description" content="A creative writing salon led by James F. Mulhern — Kirkus-starred novelist and Oxford Writing Fellow. Narrative across three genres: short story, poetry, memoir. Ten sessions, in person or on Zoom.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect width=%22100%22 height=%22100%22 fill=%22%230F2545%22/%3E%3Ctext x=%2250%22 y=%2266%22 text-anchor=%22middle%22 font-family=%22Georgia,serif%22 font-size=%2256%22 fill=%22%23C9B97E%22%3EA%3C/text%3E%3C/svg%3E">
+</head>
+<body style="margin:0;background:#F8F4EA;">
+<style type="text/css">
+/* =====================================================
+   THE ART OF TELLING — Stylesheet
+   Silver Current Press house style · Art Deco edition
+   ===================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Poiret+One&family=Limelight&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+.aot{
+  --navy:#0A1F3D;
+  --navy-deep:#05122A;
+  --navy-soft:#152C52;
+  /* Deep, saturated antique-gilt gold palette */
+  --gold:#A6831C;
+  --gold-bright:#D4A82C;
+  --gold-pale:#E8C547;
+  --gold-deep:#7A5F12;
+  --gold-shadow:#5A4609;
+  /* Bold complementary accent — deep oxblood burgundy */
+  --burgundy:#7A1F2B;
+  --burgundy-bright:#A52A37;
+  --burgundy-deep:#5C1620;
+  --cream:#F8F4EA;
+  --cream-warm:#f1e9cf;
+  --cream-page:#FBF8EE;
+  --ink:#000000;
+  --ink-soft:#1a1a1a;
+
+  font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  color:var(--ink);
+  background:var(--cream);
+  line-height:1.7;
+  font-size:20px;
+  font-weight:600;
+  max-width:920px;
+  margin:0 auto;
+  padding:0;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+.aot *{box-sizing:border-box}
+.aot p{margin:0 0 18px;font-weight:600}
+.aot ul,.aot ol{margin:10px 0 20px 26px}
+.aot li{margin-bottom:10px;font-weight:600}
+.aot a{color:var(--burgundy);border-bottom:3px solid var(--gold);text-decoration:none;font-weight:700;transition:color .2s,border-color .2s}
+.aot a:hover{color:var(--burgundy-bright);border-bottom-color:var(--burgundy-bright)}
+.aot em{color:var(--navy);font-weight:700}
+.aot strong{color:var(--navy);font-weight:800}
+
+/* ============= MASTHEAD ============= */
+.aot-mast{
+  background:
+    radial-gradient(ellipse at top, var(--navy-soft) 0%, var(--navy) 45%, var(--navy-deep) 100%);
+  color:var(--cream);
+  text-align:center;
+  padding:64px 24px 56px;
+  position:relative;
+  overflow:hidden;
+  border-bottom:5px solid var(--gold);
+}
+.aot-mast::before{
+  /* Outer double-rule frame — thicker */
+  content:"";position:absolute;top:14px;left:14px;right:14px;bottom:14px;
+  border:5px solid var(--gold);
+  pointer-events:none;
+}
+.aot-mast::after{
+  content:"";position:absolute;top:22px;left:22px;right:22px;bottom:22px;
+  border:2px solid var(--gold-pale);
+  pointer-events:none;
+}
+.aot-mast .sun{
+  display:block;
+  margin:0 auto 18px;
+  width:64px;height:64px;
+}
+.aot-mast .kicker{
+  font-family:'Cinzel',serif;
+  font-weight:700;
+  letter-spacing:.42em;
+  font-size:13px;
+  color:var(--gold-pale);
+  text-transform:uppercase;
+  margin-bottom:22px;
+}
+.aot-mast h1{
+  font-family:'Cinzel',serif;
+  font-weight:700;
+  font-size:clamp(44px,8vw,88px);
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  line-height:1;
+  margin:0;
+  /* Deeper gold gradient on the main title */
+  background:linear-gradient(180deg,#F2DC7A 0%,#D4A82C 50%,#A6831C 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+  -webkit-text-fill-color:transparent;
+  text-shadow:0 2px 0 rgba(0,0,0,.25);
+}
+.aot-mast h1 .of{
+  display:block;
+  font-family:'Cinzel',serif;
+  font-style:italic;
+  font-weight:600;
+  font-size:.32em;
+  letter-spacing:.5em;
+  color:var(--gold-pale);
+  margin:14px 0;
+  background:none;
+  -webkit-text-fill-color:var(--gold-pale);
+  text-shadow:none;
+}
+.aot-mast .subtitle{
+  font-family:'Cinzel',serif;
+  font-weight:700;
+  letter-spacing:.38em;
+  font-size:15px;
+  text-transform:uppercase;
+  color:var(--gold-bright);
+  margin-top:22px;
+}
+.aot-mast .fan{
+  display:flex;justify-content:center;align-items:center;gap:14px;
+  margin:28px auto 0;
+}
+.aot-mast .fan .bar{display:block;height:5px;background:linear-gradient(90deg,transparent,var(--gold) 25%,var(--gold-bright) 50%,var(--gold) 75%,transparent);width:90px}
+.aot-mast .fan .pip{width:13px;height:13px;background:var(--gold-bright);transform:rotate(45deg);box-shadow:0 0 10px rgba(212,168,44,.7)}
+.aot-mast .fan .pip-lg{width:18px;height:18px;background:var(--burgundy-bright);box-shadow:0 0 12px rgba(165,42,55,.6);transform:rotate(45deg)}
+.aot-mast .tagline{
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;
+  font-weight:700;
+  font-size:24px;
+  margin:28px auto 10px;
+  max-width:660px;
+  color:#F4ECD2;
+}
+.aot-mast .neighborhood{
+  display:inline-block;
+  font-family:'Cinzel',serif;
+  font-weight:700;
+  font-size:13px;
+  letter-spacing:.34em;
+  text-transform:uppercase;
+  color:var(--gold-pale);
+  margin-top:14px;
+  padding:8px 22px;
+  border:2px solid var(--burgundy-bright);
+  background:rgba(122,31,43,.45);
+}
+
+/* ============= NAVIGATION ============= */
+.aot-nav{
+  background:var(--navy-deep);
+  border-top:5px solid var(--gold);
+  border-bottom:5px solid var(--gold);
+  position:sticky;top:0;z-index:60;
+  box-shadow:0 4px 14px -6px rgba(0,0,0,.45);
+}
+.aot-nav ul{
+  list-style:none;margin:0;padding:12px 14px;
+  display:flex;flex-wrap:wrap;justify-content:center;gap:2px 22px;
+}
+.aot-nav a{
+  color:#FFFEF8;
+  font-family:'Cinzel',serif;
+  font-weight:700;
+  font-size:13px;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  padding:8px 4px;
+  border-bottom:2px solid transparent;
+  display:inline-block;
+}
+.aot-nav a:hover{color:var(--gold-bright);border-bottom-color:var(--gold-bright)}
+
+/* ============= LAYOUT ============= */
+.aot-main{padding:48px 24px 80px}
+
+.aot-section{
+  background:var(--cream-page);
+  padding:54px 46px;
+  margin:0 0 60px;
+  position:relative;
+  border:4px solid var(--gold);
+  box-shadow:
+    0 0 0 8px var(--cream-warm),
+    0 0 0 12px var(--gold),
+    0 0 0 14px var(--gold-deep),
+    0 22px 56px -24px rgba(10,31,61,.55);
+}
+/* Inner-corner Art Deco brackets — thicker */
+.aot-section::before,
+.aot-section::after{
+  content:"";position:absolute;width:50px;height:50px;
+  border:5px solid var(--gold-deep);
+  pointer-events:none;
+}
+.aot-section::before{top:-12px;left:-12px;border-right:none;border-bottom:none}
+.aot-section::after{bottom:-12px;right:-12px;border-left:none;border-top:none}
+
+.aot-section .section-kicker{
+  font-family:'Cinzel',serif;
+  font-weight:700;
+  letter-spacing:.36em;
+  font-size:13px;
+  text-transform:uppercase;
+  color:var(--burgundy);
+  text-align:center;
+  margin-bottom:10px;
+}
+.aot-section h2{
+  font-family:'Cinzel',serif;
+  text-align:center;
+  font-weight:700;
+  font-size:clamp(34px,4.6vw,52px);
+  color:var(--navy);
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  line-height:1.15;
+  margin:0;
+  position:relative;
+  display:inline-block;
+  width:100%;
+}
+.aot-section h2 .accent-dot{
+  display:inline-block;width:10px;height:10px;
+  background:var(--burgundy-bright);
+  transform:rotate(45deg);
+  margin:0 14px;
+  vertical-align:middle;
+  position:relative;top:-6px;
+}
+
+.aot-orn{
+  display:flex;justify-content:center;align-items:center;gap:12px;
+  margin:20px auto 30px;color:var(--gold-deep);
+}
+.aot-orn .l{display:block;width:110px;height:5px;background:linear-gradient(90deg,transparent,var(--gold) 25%,var(--gold-deep) 75%,transparent)}
+.aot-orn .l-short{width:38px}
+.aot-orn .pip{width:14px;height:14px;background:var(--gold-deep);transform:rotate(45deg)}
+.aot-orn .pip-c{width:20px;height:20px;background:var(--burgundy);transform:rotate(45deg);position:relative}
+.aot-orn .pip-c::after{
+  content:"";position:absolute;inset:5px;background:var(--gold-bright);
+}
+
+.aot-section h3{
+  font-family:'Cinzel',serif;
+  font-weight:700;
+  font-size:21px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--navy);
+  margin:40px 0 18px;
+  padding-bottom:14px;
+  position:relative;
+}
+.aot-section h3::after{
+  content:"";position:absolute;left:0;bottom:0;width:100%;height:7px;
+  background:
+    linear-gradient(to right, var(--gold) 0, var(--gold) 28%, var(--burgundy) 28%, var(--burgundy) 32%, var(--gold) 32%, var(--gold) 100%);
+}
+.aot-section h4{
+  font-family:'Cinzel',serif;
+  font-weight:700;
+  font-size:15px;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  color:var(--burgundy);
+  margin:26px 0 14px;
+}
+
+/* ============= UNIT HEADER — BIG ART DECO BLOCK ============= */
+.aot-unit{
+  margin:48px 0 28px;
+  position:relative;
+  text-align:center;
+  padding:38px 30px 32px;
+  background:
+    linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 50%, var(--burgundy-deep) 100%);
+  border:5px solid var(--gold);
+  box-shadow:
+    inset 0 0 0 2px var(--gold-deep),
+    inset 0 0 0 7px var(--navy),
+    inset 0 0 0 9px var(--gold),
+    0 12px 36px -14px rgba(10,31,61,.55);
+  color:var(--gold-bright);
+}
+.aot-unit::before, .aot-unit::after{
+  /* Stepped Deco corner brackets on the unit block */
+  content:"";position:absolute;width:46px;height:46px;
+  border:5px solid var(--gold-pale);
+  pointer-events:none;
+}
+.aot-unit::before{top:-12px;left:-12px;border-right:none;border-bottom:none}
+.aot-unit::after{bottom:-12px;right:-12px;border-left:none;border-top:none}
+.aot-unit .unit-eyebrow{
+  font-family:'Cinzel',serif;font-weight:700;
+  letter-spacing:.5em;font-size:11px;
+  color:var(--gold-pale);
+  text-transform:uppercase;
+  margin-bottom:14px;
+}
+.aot-unit .unit-title{
+  font-family:'Cinzel',serif;font-weight:700;
+  font-size:clamp(28px,3.6vw,38px);
+  letter-spacing:.12em;text-transform:uppercase;
+  line-height:1.15;
+  margin:0 0 10px;
+  background:linear-gradient(180deg,#F2DC7A 0%,#D4A82C 50%,#A6831C 100%);
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;color:transparent;
+  text-shadow:0 1px 0 rgba(0,0,0,.3);
+}
+.aot-unit .unit-sessions{
+  font-family:'Cinzel',serif;font-weight:700;
+  font-size:13px;letter-spacing:.32em;text-transform:uppercase;
+  color:var(--gold-bright);
+  margin-bottom:18px;
+}
+.aot-unit .unit-fan{
+  display:flex;justify-content:center;align-items:center;gap:12px;
+  margin:14px auto 16px;
+}
+.aot-unit .unit-fan .bar{display:block;height:4px;width:60px;
+  background:linear-gradient(90deg,transparent,var(--gold-bright) 50%,transparent)}
+.aot-unit .unit-fan .pip{width:11px;height:11px;background:var(--gold-bright);
+  transform:rotate(45deg);box-shadow:0 0 9px rgba(212,168,44,.7)}
+.aot-unit .unit-fan .pip-c{width:14px;height:14px;background:var(--burgundy-bright);
+  transform:rotate(45deg)}
+.aot-unit .unit-body{
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;font-weight:600;
+  color:#F4ECD2;
+  font-size:18px;line-height:1.55;
+  max-width:600px;margin:10px auto 0;
+}
+.aot-unit .unit-dates{
+  display:inline-block;
+  margin-top:14px;padding:6px 18px;
+  border:2px solid var(--gold-bright);
+  font-family:'Cinzel',serif;font-weight:700;
+  font-size:11px;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--gold-pale);
+  background:rgba(10,31,61,.5);
+}
+@media (max-width:720px){
+  .aot-unit{padding:30px 20px 26px;margin:36px 0 22px}
+  .aot-unit::before, .aot-unit::after{width:34px;height:34px;border-width:4px}
+  .aot-unit .unit-title{font-size:22px;letter-spacing:.1em}
+}
+
+/* Reading summary line under each title */
+.aot-reading-list li .reading-summary{
+  display:block;
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;font-weight:600;
+  color:#3A2C0E;
+  font-size:16px;line-height:1.5;
+  margin-top:6px;padding-left:0;
+}
+
+.aot-lead{
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;
+  font-weight:700;
+  color:#1f1c10;
+  text-align:center;
+  font-size:24px;
+  max-width:680px;
+  margin:0 auto 28px;
+  line-height:1.55;
+}
+
+/* ============= TABLE ============= */
+.aot-schedule{
+  width:100%;
+  border-collapse:collapse;
+  margin:24px 0;
+  font-size:18px;
+  font-family:'Cormorant Garamond',serif;
+  font-weight:600;
+}
+.aot-schedule th{
+  background:linear-gradient(180deg,var(--navy-soft) 0%,var(--navy) 100%);
+  color:var(--gold-bright);
+  font-family:'Cinzel',serif;
+  font-weight:700;
+  font-size:13px;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  padding:16px 12px;
+  text-align:left;
+  border:3px solid var(--gold);
+}
+.aot-schedule td{
+  border:3px solid var(--gold);
+  padding:14px 16px;
+  vertical-align:top;
+  background:#fffdf6;
+  color:var(--ink);
+}
+.aot-schedule tr:nth-child(even) td{background:var(--cream)}
+.aot-schedule td:first-child{
+  font-family:'Cinzel',serif;
+  font-weight:700;
+  color:var(--gold-deep);
+  text-align:center;
+  width:60px;
+  font-size:18px;
+}
+.aot-schedule .unit-row td{
+  background:linear-gradient(90deg,var(--navy-deep),var(--burgundy-deep) 50%,var(--navy-deep));
+  color:var(--gold-bright);
+  font-family:'Cinzel',serif;
+  font-weight:700;
+  letter-spacing:.3em;
+  font-size:13px;
+  text-transform:uppercase;
+  text-align:center;
+  padding:14px;
+  border:3px solid var(--gold);
+}
+
+/* ============= SESSION CARDS ============= */
+.aot-session{
+  background:#fffdf6;
+  border:3px solid var(--gold);
+  padding:36px 32px 30px;
+  margin:36px 0;
+  position:relative;
+  box-shadow:inset 0 0 0 2px rgba(166,131,28,.25);
+}
+.aot-session::before{
+  /* Stepped Deco corner — thicker, deeper gold */
+  content:"";
+  position:absolute;top:-3px;left:50%;transform:translateX(-50%);
+  width:100px;height:24px;
+  background:
+    linear-gradient(to bottom, var(--gold) 0 7px, transparent 7px 9px, var(--burgundy) 9px 13px, transparent 13px 15px, var(--gold) 15px 19px);
+}
+.aot-session-num{
+  font-family:'Cinzel',serif;
+  font-weight:700;
+  letter-spacing:.34em;
+  font-size:13px;
+  color:var(--burgundy);
+  text-align:center;
+  text-transform:uppercase;
+  margin-top:12px;
+}
+.aot-session-title{
+  font-family:'Cinzel',serif;
+  font-weight:700;
+  text-align:center;
+  font-size:30px;
+  letter-spacing:.06em;
+  color:var(--navy);
+  text-transform:uppercase;
+  margin:10px 0 8px;
+  line-height:1.2;
+}
+.aot-session-date{
+  text-align:center;
+  font-family:'Cinzel',serif;
+  font-weight:700;
+  font-size:14px;
+  letter-spacing:.24em;
+  text-transform:uppercase;
+  color:var(--gold-deep);
+  margin-bottom:8px;
+}
+.aot-mini-orn{
+  display:flex;justify-content:center;align-items:center;gap:10px;
+  margin:16px auto 24px;color:var(--gold-deep);
+}
+.aot-mini-orn .l{width:60px;height:5px;background:var(--gold-deep)}
+.aot-mini-orn .pip{width:13px;height:13px;background:var(--burgundy);transform:rotate(45deg)}
+
+/* ============= CALLOUT BOXES ============= */
+.aot-box{
+  background:var(--cream);
+  border:3px solid var(--gold);
+  padding:24px 28px;
+  margin:20px 0;
+  position:relative;
+}
+.aot-box::before{
+  content:"";position:absolute;top:6px;left:6px;right:6px;bottom:6px;
+  border:2px solid var(--gold-deep);pointer-events:none;
+}
+.aot-box > *{position:relative}
+.aot-box h4:first-child{margin-top:0}
+
+.aot-promise{
+  background:var(--cream);
+  border-left:10px solid var(--gold);
+  padding:20px 26px 20px 30px;
+  margin:16px 0;
+}
+.aot-ask{
+  background:var(--cream);
+  border-left:10px solid var(--burgundy);
+  padding:20px 26px 20px 30px;
+  margin:16px 0;
+}
+
+.aot-quote{
+  border-left:8px solid var(--burgundy);
+  padding:18px 30px;
+  margin:22px 0;
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;
+  font-weight:700;
+  color:#1a1407;
+  background:linear-gradient(90deg,var(--cream),#fbf2d6 100%);
+  font-size:22px;
+  line-height:1.55;
+  position:relative;
+}
+.aot-quote::before{
+  content:"\201C";
+  position:absolute;top:-10px;left:14px;
+  font-family:Georgia,serif;
+  font-size:68px;color:var(--gold);
+  line-height:1;font-style:normal;
+}
+.aot-quote .attr{
+  display:block;font-style:normal;
+  font-family:'Cinzel',serif;font-weight:700;font-size:13px;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--burgundy);margin-top:12px;
+}
+
+.aot-questions{
+  counter-reset:q; list-style:none; margin-left:0;padding-left:0;
+}
+.aot-questions li{
+  counter-increment:q; position:relative;
+  padding:16px 18px 16px 70px;
+  margin-bottom:14px;
+  background:var(--cream); border-left:7px solid var(--gold);
+}
+.aot-questions li::before{
+  content:counter(q,upper-roman);
+  position:absolute;left:18px;top:14px;
+  font-family:'Cinzel',serif;color:var(--burgundy);
+  font-weight:700;letter-spacing:.06em;font-size:19px;
+}
+
+.aot-reading-list{list-style:none;margin-left:0;padding-left:0}
+.aot-reading-list li{
+  padding:13px 0 13px 32px;
+  border-bottom:3px dotted var(--gold-deep);
+  position:relative;
+}
+.aot-reading-list li::before{
+  content:"\2756";color:var(--gold-deep);
+  position:absolute;left:6px;top:13px;font-size:17px;font-weight:700;
+}
+.aot-reading-list li:last-child{border-bottom:none}
+
+/* ============= PRINTABLE HANDOUT ============= */
+.aot-handout{
+  background:#fffdf6;
+  border:5px solid var(--gold);
+  padding:38px 34px 30px;
+  margin:30px 0 36px;
+  position:relative;
+  box-shadow:inset 0 0 0 2px var(--gold-deep);
+}
+.aot-handout::before{
+  /* deco tab at top */
+  content:"FOR YOUR NOTEBOOK";
+  position:absolute;top:-18px;left:50%;transform:translateX(-50%);
+  background:var(--burgundy);color:var(--gold-bright);
+  font-family:'Cinzel',serif;font-weight:700;font-size:12px;letter-spacing:.3em;
+  padding:8px 22px;border:3px solid var(--gold);
+}
+.aot-handout h4{margin-top:8px}
+
+/* ============= BEFORE NEXT SUNDAY BOX ============= */
+.aot-next{
+  background:linear-gradient(180deg,#0A1F3D 0%,#0E2447 100%);
+  color:#F8F4EA;
+  border:4px solid var(--gold);
+  border-radius:0;
+  padding:32px 30px 26px;
+  margin:30px 0 28px;
+  position:relative;
+  box-shadow:inset 0 0 0 2px var(--gold-deep), 0 6px 0 -2px var(--burgundy);
+}
+.aot-next::before{
+  content:"❖  BEFORE NEXT SUNDAY  ❖";
+  position:absolute;top:-15px;left:50%;transform:translateX(-50%);
+  background:var(--gold);color:var(--navy);
+  font-family:'Cinzel',serif;font-weight:700;font-size:12px;letter-spacing:.28em;
+  padding:7px 22px;border:2px solid var(--navy);
+  white-space:nowrap;
+}
+.aot-next h5{
+  font-family:'Cinzel',serif;font-weight:700;font-size:15px;
+  color:var(--gold-bright);letter-spacing:.16em;text-transform:uppercase;
+  margin:8px 0 8px;
+}
+.aot-next h5:first-of-type{margin-top:4px}
+.aot-next p, .aot-next li{
+  font-family:'Cormorant Garamond',serif;
+  font-weight:600;font-size:17px;line-height:1.55;color:#F8F4EA;
+  margin:0 0 8px;
+}
+.aot-next ul{margin:4px 0 10px;padding-left:22px}
+.aot-next .opt{
+  font-family:'Cormorant Garamond',serif;font-style:italic;
+  color:var(--gold-pale);font-size:15px;font-weight:600;
+}
+.aot-next em{color:var(--gold-pale);font-weight:700}
+.aot-next strong{color:var(--gold-bright);font-weight:800}
+.aot-next a{color:var(--gold-bright);text-decoration:underline}
+
+/* ============= COPY HELP BOX ============= */
+.aot-copy-tip{
+  background:linear-gradient(135deg,var(--navy) 0%,var(--burgundy-deep) 100%);
+  color:#FFFEF8;
+  padding:24px 30px;
+  font-family:'Cormorant Garamond',serif;
+  font-weight:700;
+  font-size:19px;
+  line-height:1.55;
+  border:5px solid var(--gold);
+  margin:20px 0 28px;
+  box-shadow:inset 0 0 0 2px var(--gold-deep);
+}
+.aot-copy-tip strong{color:var(--gold-bright);font-weight:800}
+.aot-copy-tip .label{
+  font-family:'Cinzel',serif;
+  font-weight:700;
+  font-size:13px;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--gold-bright);
+  display:block;margin-bottom:10px;
+}
+
+/* ============= GLOSSARY ============= */
+.aot-gloss{
+  display:grid;
+  grid-template-columns:max-content 1fr;
+  gap:16px 28px;
+  margin:10px 0 10px;
+  font-size:19px;
+}
+.aot-gloss dt{
+  font-family:'Cinzel',serif;
+  font-weight:700;
+  font-size:15px;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--burgundy);
+  padding-top:3px;
+  border-right:5px solid var(--gold);
+  padding-right:22px;
+}
+.aot-gloss dd{margin:0;color:var(--ink);font-weight:600}
+
+/* ============= FOOTER ============= */
+.aot-foot{
+  background:
+    radial-gradient(ellipse at bottom, var(--burgundy-deep) 0%, var(--navy) 55%, var(--navy-deep) 100%);
+  color:#FFFEF8;
+  text-align:center;
+  padding:58px 26px 48px;
+  border-top:5px solid var(--gold);
+  position:relative;
+}
+.aot-foot::before{
+  content:"";position:absolute;top:14px;left:14px;right:14px;bottom:14px;
+  border:3px solid var(--gold);pointer-events:none;
+}
+.aot-foot .sun{display:block;margin:0 auto 16px;width:60px;height:60px}
+.aot-foot .signature{
+  font-family:'Cinzel',serif;font-weight:700;letter-spacing:.36em;font-size:14px;
+  text-transform:uppercase;color:var(--gold-bright);margin-bottom:16px;
+}
+.aot-foot h3{
+  font-family:'Cinzel',serif;font-weight:700;
+  letter-spacing:.14em;text-transform:uppercase;
+  font-size:26px;
+  background:linear-gradient(180deg,#F2DC7A 0%,#D4A82C 50%,#A6831C 100%);
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;color:transparent;
+  margin:0 0 20px;
+}
+.aot-foot p{margin:0 0 10px;color:#F4ECD2;font-size:18px;font-weight:600}
+.aot-foot a{color:var(--gold-bright);border-bottom:2px solid transparent;font-weight:700}
+.aot-foot a:hover{border-bottom-color:var(--gold-bright)}
+.aot-foot .imprint{
+  font-family:'Cinzel',serif;font-weight:700;letter-spacing:.3em;font-size:12px;
+  text-transform:uppercase;color:var(--gold-bright);margin-top:26px;
+}
+
+/* ============= RESPONSIVE ============= */
+@media (max-width:720px){
+  .aot{font-size:18px}
+  .aot-main{padding:30px 14px 60px}
+  .aot-section{padding:36px 24px;box-shadow:0 0 0 5px var(--cream-warm), 0 0 0 7px var(--gold-deep), 0 10px 28px -14px rgba(10,31,61,.45)}
+  .aot-nav ul{gap:2px 12px}
+  .aot-nav a{font-size:11px;letter-spacing:.16em}
+  .aot-mast{padding:46px 16px 40px}
+  .aot-schedule{font-size:15px}
+  .aot-schedule th,.aot-schedule td{padding:10px 8px}
+  .aot-session-title{font-size:23px}
+  .aot-gloss{grid-template-columns:1fr;gap:8px 0}
+  .aot-gloss dt{border-right:none;padding-right:0;padding-top:16px}
+}
+
+/* ============= PRINT ============= */
+@media print{
+  .aot-nav,.aot-copy-tip{display:none!important}
+  .aot{background:#fff;color:#000;font-size:11pt;max-width:100%}
+  .aot-section{box-shadow:none;border:1px solid #888;page-break-inside:avoid;padding:20px}
+  .aot-mast,.aot-foot{background:#fff;color:#000;border:1px solid #888}
+  .aot-mast h1,.aot-mast .subtitle,.aot-mast .kicker,.aot-mast .tagline,.aot-mast .neighborhood{color:#000}
+  .aot-foot h3,.aot-foot .signature,.aot-foot .imprint,.aot-foot p{color:#000}
+  .aot-quote,.aot-box,.aot-handout,.aot-promise,.aot-ask{background:#fff}
+}
+
+/* === Page menu / back button === */
+.aot-page-menu{
+  background:#FFFFFF;
+  padding:30px 22px 36px;
+  border-bottom:8px solid #0F2545;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+}
+.aot-page-menu *{font-family:inherit}
+.aot-page-menu-inner{max-width:920px;margin:0 auto}
+.aot-page-menu h2{
+  text-align:center;font-size:30px;font-weight:800;color:#0F2545;
+  margin:0 0 6px;letter-spacing:normal;text-transform:none;
+}
+.aot-page-menu .lead{
+  text-align:center;font-size:17px;color:#444;margin:0 0 24px;font-style:normal;
+}
+.simple-row{display:flex;flex-wrap:wrap;gap:12px;margin:0}
+
+.simple-folder{margin:0 0 14px}
+.simple-folder summary{
+  list-style:none;cursor:pointer;
+  background:#0F2545;color:#FFFFFF;
+  font-size:21px;font-weight:800;
+  padding:20px 26px;
+  border:3px solid #0F2545;border-radius:10px;
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+}
+.simple-folder summary::-webkit-details-marker{display:none}
+.simple-folder summary::after{content:"\25BC";font-size:18px;color:#C9B97E}
+.simple-folder[open] summary::after{content:"\25B2"}
+.simple-folder summary:hover,.simple-folder summary:focus{background:#1d3a6d;border-color:#1d3a6d}
+.simple-folder .folder-body{
+  background:#F7F1E1;border:3px solid #C9B97E;border-top:none;
+  border-radius:0 0 10px 10px;padding:18px;margin-top:-3px;
+}
+.simple-btn{
+  display:inline-block;background:#0F2545;color:#FFFFFF !important;
+  font-size:17px;font-weight:700;text-decoration:none !important;
+  padding:14px 20px;border:3px solid #0F2545;border-radius:10px;
+  line-height:1.2;letter-spacing:normal;text-transform:none;
+  min-width:160px;text-align:center;cursor:pointer;
+}
+.simple-btn:hover,.simple-btn:focus{background:#1d3a6d;border-color:#1d3a6d}
+.simple-btn.read{background:#FFFFFF;color:#0F2545 !important;border-color:#0F2545;min-width:0;text-align:left;font-size:16px;padding:13px 16px}
+.simple-btn.read:hover,.simple-btn.read:focus{background:#0F2545;color:#FFFFFF !important}
+
+.aot-back-bar{
+  background:#FFFFFF;
+  border-bottom:5px solid #C9B97E;
+  padding:14px 22px;text-align:center;
+}
+.aot-back-bar a{
+  display:inline-block;background:#0F2545;color:#FFFFFF !important;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size:18px;font-weight:800;text-decoration:none !important;
+  padding:14px 28px;border:3px solid #0F2545;border-radius:10px;
+}
+.aot-back-bar a:hover,.aot-back-bar a:focus{background:#1d3a6d;border-color:#1d3a6d}
+
+.simple-wb{
+  display:block;background:#7A1F2B;color:#FFFFFF !important;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size:21px;font-weight:800;text-decoration:none !important;
+  padding:20px 26px;border:3px solid #7A1F2B;border-radius:10px;
+  margin:0 0 14px;text-align:center;
+}
+.simple-wb:hover,.simple-wb:focus{background:#5a1620;border-color:#5a1620}
+
+@media (max-width:720px){
+  .aot-page-menu h2{font-size:24px}
+  .simple-folder summary,.simple-wb{font-size:19px;padding:18px 20px}
+  .simple-btn{width:100%;min-width:0}
+  .aot-back-bar a{font-size:17px;padding:13px 22px;width:auto}
+}
+@media print{.aot-page-menu,.aot-back-bar{display:none !important}}
+
+/* Hide big banner on homepage — menu is first */
+body .aot-mast{display:none !important}
+/* Small title strip */
+.aot-mini-mast{
+  background:#0F2545;color:#FFFEF8;
+  padding:18px 22px;text-align:center;
+  border-bottom:5px solid #C9B97E;
+  font-family:Georgia,"Iowan Old Style","Times New Roman",serif;
+}
+.aot-mini-mast .t{font-size:26px;font-weight:800;letter-spacing:.04em}
+.aot-mini-mast .s{font-size:14px;color:#C9B97E;letter-spacing:.2em;text-transform:uppercase;margin-top:4px}
+@media (max-width:720px){
+  .aot-mini-mast .t{font-size:22px}
+  .aot-mini-mast .s{font-size:12px}
+}
+
+/* === NOTICES bar at top of every page === */
+.aot-notices{
+  background:#FFF8E1;
+  border-top:5px solid #C9B97E;
+  border-bottom:5px solid #C9B97E;
+  padding:18px 24px;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+}
+.aot-notices-inner{max-width:980px;margin:0 auto}
+.aot-notices h3{
+  font-size:16px;font-weight:800;color:#7A1F2B;
+  margin:0 0 10px;letter-spacing:.15em;text-transform:uppercase;
+  text-align:center;
+}
+.aot-notice{
+  background:#FFFFFF;
+  border-left:6px solid #7A1F2B;
+  padding:14px 18px;
+  margin:0 0 10px;
+  border-radius:6px;
+  color:#222;font-size:17px;line-height:1.45;
+}
+.aot-notice:last-child{margin-bottom:0}
+.aot-notice .date{
+  display:block;font-size:13px;color:#666;
+  text-transform:uppercase;letter-spacing:.08em;
+  margin-bottom:4px;font-weight:700;
+}
+.aot-notices.empty{display:none}
+
+/* === HANDOUTS area === */
+.aot-handouts{
+  background:#FFFEF8;
+  border:2px solid #C9B97E;
+  border-radius:10px;
+  padding:18px 22px;
+  margin:18px 0 0;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+}
+.aot-handouts h4{
+  font-size:22px;font-weight:800;color:#0F2545;
+  margin:0 0 12px;letter-spacing:normal;text-transform:none;
+  text-align:left;border:none;background:none;padding:0;
+  font-family:inherit !important;
+}
+.aot-handouts-list{display:flex;flex-direction:column;gap:8px}
+.aot-handout-link{
+  display:flex;align-items:center;gap:12px;
+  background:#FFFFFF;color:#0F2545 !important;
+  text-decoration:none !important;
+  padding:14px 16px;border:2px solid #0F2545;border-radius:8px;
+  font-size:17px;font-weight:700;
+}
+.aot-handout-link:hover,.aot-handout-link:focus{background:#0F2545;color:#FFFFFF !important}
+.aot-handout-icon{
+  font-size:22px;line-height:1;flex-shrink:0;
+}
+.aot-handouts.empty{display:none}
+@media (max-width:720px){
+  .aot-notice{font-size:16px;padding:12px 14px}
+  .aot-handout-link{font-size:16px;padding:12px 14px}
+}
+@media print{
+  .aot-notices, .aot-handouts{break-inside:avoid}
+}
+</style>
+
+<div class="aot">
+
+<!-- ========================================================
+     MASTHEAD
+     ======================================================== -->
+<header class="aot-mast">
+  <!-- Art Deco sunburst -->
+  <svg class="sun" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <g fill="none" stroke="#D4A82C" stroke-width="4">
+      <circle cx="50" cy="50" r="14"/>
+      <circle cx="50" cy="50" r="20" stroke-opacity=".8"/>
+    </g>
+    <g stroke="#D4A82C" stroke-width="4.5" stroke-linecap="round">
+      <line x1="50" y1="6"  x2="50" y2="26"/>
+      <line x1="50" y1="74" x2="50" y2="94"/>
+      <line x1="6"  y1="50" x2="26" y2="50"/>
+      <line x1="74" y1="50" x2="94" y2="50"/>
+      <line x1="20" y1="20" x2="34" y2="34"/>
+      <line x1="66" y1="66" x2="80" y2="80"/>
+      <line x1="80" y1="20" x2="66" y2="34"/>
+      <line x1="34" y1="66" x2="20" y2="80"/>
+    </g>
+    <g fill="#D4A82C">
+      <circle cx="50" cy="50" r="6"/>
+    </g>
+  </svg>
+
+  <div class="kicker">A Free Creative Writing Salon &nbsp;·&nbsp; Spring &amp; Summer 2026</div>
+  <h1>The Art<span class="of">of</span>Telling</h1>
+  <div class="subtitle">Short Story &nbsp;·&nbsp; Poetry &nbsp;·&nbsp; Memoir</div>
+  <div class="fan"><span class="bar"></span><span class="pip"></span><span class="pip-lg"></span><span class="pip"></span><span class="bar"></span></div>
+  <p class="tagline">Your story matters. Come learn to tell it.</p>
+  <div class="neighborhood">A Free Course for Residents of 2601</div>
+</header>
+
+<!-- ========================================================
+     NAVIGATION
+     ======================================================== -->
+<section class="aot-notices" id="notices" aria-label="Notices">
+  <div class="aot-notices-inner">
+    <h3>Notices &amp; Announcements</h3>
+    <!-- NOTICES START -->
+    <article class="aot-notice">
+      <span class="date">Posted Wednesday, June 10, 2026</span>
+      I like to have a structured syllabus but prefer to &ldquo;go with the flow&rdquo; and see where the &ldquo;current&rdquo; of our discussion pulls us. When we meet next Sunday, I will offer to extend the course with additional sessions, as it seems we have barely started. I would like to return to parts of the syllabus we haven&rsquo;t addressed. Such is the ebb and flow of writing, literature, and all creative pursuits. Looking forward to seeing you next class.
+    </article>
+    <!-- NOTICES END -->
+  </div>
+</section>
+<div class="aot-mini-mast"><div class="t">The Art of Telling</div><div class="s">Spring &amp; Summer 2026</div></div>
+<section class="aot-page-menu">
+  <div class="aot-page-menu-inner">
+    <h2>What would you like to see?</h2>
+    <p class="lead">Click any button below.</p>
+    <details class="simple-folder">
+      <summary>Important Information &amp; Course Materials</summary>
+      <div class="folder-body"><div class="simple-row"><a class="simple-btn" href="welcome.html">Welcome</a><a class="simple-btn" href="about.html">About the Course</a><a class="simple-btn" href="syllabus.html">Syllabus</a><a class="simple-btn" href="schedule.html">Schedule</a><a class="simple-btn" href="bring.html">What to Bring</a><a class="simple-btn" href="glossary.html">Glossary</a><a class="simple-btn" href="companion.html">Reading Companion</a><a class="simple-btn" href="print.html">Print at Home</a><a class="simple-btn" href="about.html">About the Teacher</a></div></div>
+    </details>
+    <details class="simple-folder">
+      <summary>The Sessions</summary>
+      <div class="folder-body"><div class="simple-row"><a class="simple-btn" href="s1.html">Session 1</a><a class="simple-btn" href="s2.html">Session 2</a><a class="simple-btn" href="s3.html">Session 3</a><a class="simple-btn" href="s4.html">Session 4</a><a class="simple-btn" href="s5.html">Session 5</a><a class="simple-btn" href="s6.html">Session 6</a><a class="simple-btn" href="s7.html">Session 7</a><a class="simple-btn" href="s8.html">Session 8</a><a class="simple-btn" href="s9.html">Session 9</a><a class="simple-btn" href="s10.html">Session 10</a><a class="simple-btn" href="farewell.html">Farewell</a></div></div>
+    </details>
+    <details class="simple-folder">
+      <summary>The Readings</summary>
+      <div class="folder-body"><div class="simple-row"><a class="simple-btn read" target="_blank" rel="noopener" href="https://en.wikisource.org/wiki/Men_Without_Women/Hills_Like_White_Elephants">Hemingway — Hills Like White Elephants</a><a class="simple-btn read" target="_blank" rel="noopener" href="https://www.gutenberg.org/files/1952/1952-h/1952-h.htm">Gilman — The Yellow Wallpaper</a><a class="simple-btn read" target="_blank" rel="noopener" href="https://www.gutenberg.org/files/1429/1429-h/1429-h.htm#at_the_bay">Mansfield — At the Bay</a><a class="simple-btn read" target="_blank" rel="noopener" href="https://www.gutenberg.org/files/13415/13415-h/13415-h.htm">Chekhov — The Lady with the Dog</a><a class="simple-btn read" target="_blank" rel="noopener" href="https://www.poetryfoundation.org/poems/47536/one-art">Bishop — One Art</a><a class="simple-btn read" target="_blank" rel="noopener" href="https://www.poetryfoundation.org/poems/44260/birches">Frost — Birches</a><a class="simple-btn read" target="_blank" rel="noopener" href="https://www.poetryfoundation.org/poems/45502/the-red-wheelbarrow">Williams — The Red Wheelbarrow</a><a class="simple-btn read" target="_blank" rel="noopener" href="https://www.loc.gov/programs/poetry-and-literature/poet-laureate/poet-laureate-projects/poetry-180/all-poems/item/poetry-180-133/the-summer-day/">Oliver — The Summer Day</a><a class="simple-btn read" target="_blank" rel="noopener" href="https://www.poetryfoundation.org/poems/47555/digging">Heaney — Digging</a><a class="simple-btn read" target="_blank" rel="noopener" href="https://poets.org/poem/otherwise">Kenyon — Otherwise</a><a class="simple-btn read" target="_blank" rel="noopener" href="https://www.poetryfoundation.org/poems/50974/wont-you-celebrate-with-me">Clifton — won’t you celebrate with me</a><a class="simple-btn read" target="_blank" rel="noopener" href="https://www.gutenberg.org/files/23/23-h/23-h.htm">Douglass — Narrative (Ch. 1)</a><a class="simple-btn read" target="_blank" rel="noopener" href="https://www.gutenberg.org/files/20885/20885-h/20885-h.htm">Antin — The Promised Land</a><a class="simple-btn read" target="_blank" rel="noopener" href="https://www.gutenberg.org/files/2376/2376-h/2376-h.htm">Washington — Up from Slavery</a><a class="simple-btn read" target="_blank" rel="noopener" href="https://gutenberg.net.au/ebooks04/0400491h.html">Anderson — Death in the Woods</a><a class="simple-btn read" target="_blank" rel="noopener" href="https://www.gutenberg.org/files/205/205-h/205-h.htm">Thoreau — Where I Lived (Walden)</a></div></div>
+    </details>
+    <section class="aot-handouts empty" id="course-handouts" aria-label="Course Handouts">
+      <h4>Handouts &amp; Worksheets</h4>
+      <div class="aot-handouts-list">
+        <!-- HANDOUTS-course START -->
+        <!-- HANDOUTS-course END -->
+      </div>
+    </section>
+    <a class="simple-wb" href="https://whiteboard.silvercurrentpress.com">Open the Whiteboard &rarr;</a>
+  </div>
+</section></main>
+
+<!-- ========================================================
+     FOOTER
+     ======================================================== -->
+<footer class="aot-foot">
+  <svg class="sun" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <g fill="none" stroke="#D4A82C" stroke-width="4">
+      <circle cx="50" cy="50" r="14"/>
+      <circle cx="50" cy="50" r="20" stroke-opacity=".8"/>
+    </g>
+    <g stroke="#D4A82C" stroke-width="4.5" stroke-linecap="round">
+      <line x1="50" y1="6"  x2="50" y2="26"/>
+      <line x1="50" y1="74" x2="50" y2="94"/>
+      <line x1="6"  y1="50" x2="26" y2="50"/>
+      <line x1="74" y1="50" x2="94" y2="50"/>
+      <line x1="20" y1="20" x2="34" y2="34"/>
+      <line x1="66" y1="66" x2="80" y2="80"/>
+      <line x1="80" y1="20" x2="66" y2="34"/>
+      <line x1="34" y1="66" x2="20" y2="80"/>
+    </g>
+    <g fill="#D4A82C"><circle cx="50" cy="50" r="6"/></g>
+  </svg>
+  <div class="signature">&mdash; The Art of Telling &mdash;</div>
+  <h3>Your story matters. Come learn to tell it.</h3>
+  <p>Ten sessions &nbsp;·&nbsp; 90 minutes each &nbsp;·&nbsp; In person or on Zoom</p>
+  <p>May 17 &mdash; July 26, 2026</p>
+  <p style="margin-top:14px">Presented by Silver Current Press · Philadelphia</p>
+  <p style="margin-top:14px"><a href="/cdn-cgi/l/email-protection#91fbf0fcf4e2f7fce4fdf9f4e3ffd1f6fcf0f8fdbff2fefc"><span class="__cf_email__" data-cfemail="6c060d01091f0a01190004091e022c0b010d0500420f0301">[email&#160;protected]</span></a> &nbsp;·&nbsp; <a href="https://authorjamesmulhern.com" target="_blank" rel="noopener">authorjamesmulhern.com</a></p>
+  <div class="imprint" style="margin-top:18px;line-height:1.55">
+    Silver Current Press &nbsp;·&nbsp; Philadelphia<br>
+    <span style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:14px;letter-spacing:.04em;text-transform:none;color:#E8C547">
+      A small literary imprint &mdash; fiction, poetry, and the art of the well-made book
+    </span>
+  </div>
+  <div style="margin-top:24px;padding-top:18px;border-top:1px solid #A6831C;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:13px;line-height:1.6;color:#E8C547;max-width:680px;margin-left:auto;margin-right:auto">
+    <p style="margin:0 0 8px">All course readings are linked to their authorized hosts: Project Gutenberg, Wikisource, the Library of Congress, the Poetry Foundation, and the Academy of American Poets. Works under current copyright are linked only via those rights-holders&rsquo; own freely available pages. No reading is reproduced on this site; every link opens on the original publisher&rsquo;s page.</p>
+    <p style="margin:0">Course materials, lesson plans, discussion questions, and worksheets &copy; 2026 James Mulhern. All linked third-party works remain the property of their respective copyright holders.</p>
+  </div>
+</footer>
+
+</div>
+<!-- end .aot -->
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
