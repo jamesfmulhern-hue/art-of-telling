@@ -156,7 +156,7 @@ def session_sort_key(session_label):
 
 def render_card(item):
     updated = item.get("published_date", "")
-    updated_html = f'<span class="aot-handout-date" style="display:block;font-size:12px;color:#7A6A3A;margin-top:2px">Added {updated}</span>' if updated else ""
+    updated_html = f'<span class="aot-handout-date" style="display:block;font-size:12px;color:#666;margin-top:2px">Added {updated}</span>' if updated else ""
     return (
         f'<a class="aot-handout-link" href="handouts/{item["filename"]}" download>'
         f'<span class="aot-handout-icon" aria-hidden="true">PDF</span>'
@@ -204,7 +204,7 @@ def main():
         + STYLE_LINK
         + BODY_OPEN
         + "\n  " + "\n  ".join(sections_html) + "\n"
-        + f'  <p style="margin-top:24px;font-size:13px;color:#7A6A3A;text-align:center">Last updated {generated} &middot; updated automatically as new student materials are added.</p>\n'
+        + f'  <p style="margin-top:24px;font-size:13px;color:#666;text-align:center">Last updated {generated} &middot; updated automatically as new student materials are added.</p>\n'
         + BODY_CLOSE
         + FOOTER
     )
